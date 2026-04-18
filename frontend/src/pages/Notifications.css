@@ -1,0 +1,75 @@
+.notifications-page {
+  max-width: 640px;
+}
+
+.notifications-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notifications-list li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.notifications-list li:last-child {
+  border-bottom: none;
+}
+
+.notifications-list li.read {
+  opacity: 0.85;
+}
+
+.notif-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.5px;
+}
+
+.notif-type.expiry {
+  background: var(--warn-bg);
+  color: var(--warn);
+  border: 1px solid var(--warn);
+  opacity: 0.9;
+}
+
+.notif-type.low_stock {
+  background: var(--danger-bg);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  opacity: 0.9;
+}
+
+.notif-message {
+  margin: 0 0 0.25rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.notif-time {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.notif-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.no-data {
+  padding: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--text-muted);
+}

@@ -1,0 +1,111 @@
+.update-stock-page {
+  max-width: 700px;
+}
+
+.form-card h2,
+.list-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-grid .label {
+  margin-bottom: 0;
+}
+
+/* Input field improvements for better UX */
+.form-grid .input {
+  cursor: text;
+  transition: all 0.15s ease;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text-primary);
+}
+
+.form-grid .input:hover {
+  border-color: var(--accent);
+}
+
+.form-grid .input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.1);
+  outline: none;
+}
+
+/* Placeholder styling */
+.form-grid .input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* simple inline validation message */
+.field-error {
+  color: var(--danger);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.bulk-row {
+  margin: 1rem 0;
+}
+
+.bulk-success {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.medicine-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.medicine-list li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.medicine-list li:last-child {
+  border-bottom: none;
+}
+
+.medicine-list .name {
+  font-weight: 500;
+  min-width: 140px;
+}
+
+.medicine-list .meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.medicine-list .actions {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.medicine-list .empty {
+  color: var(--text-muted);
+  padding: 1.5rem;
+}
